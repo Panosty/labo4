@@ -1,0 +1,13 @@
+<div class="container">
+  <mat-form-field appearance="fill">
+      <mat-label>Réaumur</mat-label>
+      <input matInput [(ngModel)]="reaumur" (ngModelChange)="ReaumurToCelcius()">
+    </mat-form-field>
+  
+    <span class="egal">=</span>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Celcius</mat-label>
+      <input matInput [(ngModel)]="celcius" (ngModelChange)="CelciusToReaumur()">
+    </mat-form-field>
+  </div>

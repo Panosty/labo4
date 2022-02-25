@@ -1,0 +1,13 @@
+<div class="container">
+<mat-form-field appearance="fill">
+    <mat-label>Miles</mat-label>
+    <input matInput [(ngModel)]="miles" (ngModelChange)="milesToKm()">
+  </mat-form-field>
+
+  <span class="egal">=</span>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Kilomètres</mat-label>
+    <input matInput [(ngModel)]="km" (ngModelChange)="KmTomiles()">
+  </mat-form-field>
+</div>
